@@ -1,0 +1,29 @@
+{
+    "name": "TODO",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup":"popu.html" ,
+        "default_icon": {
+            "24": "istockphoto-1005546132-612x612.jpg"
+          }
+    }, 
+    "permissions":[        
+    	"activeTab"
+    ],
+    "content_scripts":[   
+        {
+        "matches": ["http://www.google.com/*"],
+    	"js":["jquery.min.js", "jquery.js","jquery.min.js","jquery-ui.min.js","script.js"],
+    	"persistent": false 
+        }
+    ]  
+}
+ 
+
+
+
+
+
+
+
